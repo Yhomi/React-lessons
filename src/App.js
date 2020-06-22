@@ -6,11 +6,12 @@ import {Ace} from './components/Ace';
 import Welcome from './components/welcome';
 import Hello from "./components/Hello";
 import Message from "./components/message";
+import Counter from "./components/counter";
 
 function App() {
   return (
     <div className="App">
-      <Greeting name="Bruce" heroName="Batman">
+      {/* <Greeting name="Bruce" heroName="Batman">
       <p>This is children props</p>
       </Greeting>
       <Greeting name="Diana" heroname="Wonder Woman">
@@ -21,7 +22,15 @@ function App() {
       <Welcome name="Diana" heroname="Wonder Woman" />
       <Welcome name="Clark" heroName="Superman" />
 
-      <Message />
+      <Message /> */}
+
+  {/* // Destructuring 
+
+  <Greeting name="Bruce" heroName="Batman">
+      <p>This is children props</p>
+      </Greeting>
+      <Welcome name="Clark" heroName="Superman" /> */}
+      <Counter />
       {/* <Ace />
       
       <Hello /> */}
