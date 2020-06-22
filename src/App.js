@@ -7,10 +7,19 @@ import Welcome from './components/welcome';
 import Hello from "./components/Hello";
 import Message from "./components/message";
 import Counter from "./components/counter";
+import ClickFun from "./components/eventClick";
+import ClickClass from "./components/classClick";
+import Eventbind from "./components/eventBind";
+import Parent from "./components/parentComp";
+import Condition from "./components/userGreeting";
+
 
 function App() {
   return (
     <div className="App">
+
+      <Condition />
+
       {/* <Greeting name="Bruce" heroName="Batman">
       <p>This is children props</p>
       </Greeting>
@@ -30,10 +39,18 @@ function App() {
       <p>This is children props</p>
       </Greeting>
       <Welcome name="Clark" heroName="Superman" /> */}
-      <Counter />
+     
+      {/* <Counter /> */}
       {/* <Ace />
       
       <Hello /> */}
+
+    {/* <ClickFun />
+    <ClickClass /> */}
+
+    {/* <Eventbind /> */}
+
+      {/* <Parent /> */}
     </div>
   );
 }
