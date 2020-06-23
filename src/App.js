@@ -13,6 +13,10 @@ import Eventbind from "./components/eventBind";
 import Parent from "./components/parentComp";
 import Condition from "./components/userGreeting";
 import List from "./components/nameList";
+import Stylesheet from "./components/styleSheet";
+import Inline from "./components/inline";
+import './appStyles.css';
+import styles from './appStyles.module.css';
 
 
 
@@ -21,10 +25,13 @@ function App() {
     <div className="App">
 
         {/*<Condition /> */}
-      <List />
-
-      
-
+      {/*<List />*/}
+      <Stylesheet />
+      <hr />
+      <Inline />
+      <br />
+      <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1>
       {/* <Greeting name="Bruce" heroName="Batman">
       <p>This is children props</p>
       </Greeting>

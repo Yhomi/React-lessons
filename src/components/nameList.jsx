@@ -2,7 +2,7 @@ import React from 'react';
 import Person from './personList';
 
 const List = ()=>{
-    const names=['luffy','Zoro',"Sanji","Ussop","Franky","Chopper"]
+    const names=['luffy','Zoro',"Sanji","Ussop","Franky","Chopper","Zoro"]
 
     const persons =[
       {
@@ -25,14 +25,15 @@ const List = ()=>{
       }
     ]
 
-    const personsList = persons.map(person=> <Person person={person} />)
+    const personsList = persons.map(person=> <Person key={person.id} person={person} />)
 
     // Or
-    const NameList=names.map(name=><h2>{name}</h2>)
+    const NameList=names.map((name,index)=> <h2 key={index}>{index} {name}</h2> )
     return(
         <div>
           {
             NameList
+
           }
           <div>{personsList}</div>
         </div>
