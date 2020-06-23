@@ -17,6 +17,8 @@ import Stylesheet from "./components/styleSheet";
 import Inline from "./components/inline";
 import './appStyles.css';
 import styles from './appStyles.module.css';
+import Form from "./components/form";
+import CycleA from "./components/lifeCycleA";
 
 
 
@@ -24,14 +26,17 @@ function App() {
   return (
     <div className="App">
 
+      {/*}<Form />*/}
+      <CycleA />
+
         {/*<Condition /> */}
       {/*<List />*/}
-      <Stylesheet />
+      {/*}<Stylesheet />
       <hr />
       <Inline />
       <br />
       <h1 className="error">Error</h1>
-      <h1 className={styles.success}>Success</h1>
+      <h1 className={styles.success}>Success</h1>*/}
       {/* <Greeting name="Bruce" heroName="Batman">
       <p>This is children props</p>
       </Greeting>
