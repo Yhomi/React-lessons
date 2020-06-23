@@ -12,13 +12,18 @@ import ClickClass from "./components/classClick";
 import Eventbind from "./components/eventBind";
 import Parent from "./components/parentComp";
 import Condition from "./components/userGreeting";
+import List from "./components/nameList";
+
 
 
 function App() {
   return (
     <div className="App">
 
-      <Condition />
+        {/*<Condition /> */}
+      <List />
+
+      
 
       {/* <Greeting name="Bruce" heroName="Batman">
       <p>This is children props</p>
@@ -33,16 +38,16 @@ function App() {
 
       <Message /> */}
 
-  {/* // Destructuring 
+  {/* // Destructuring
 
   <Greeting name="Bruce" heroName="Batman">
       <p>This is children props</p>
       </Greeting>
       <Welcome name="Clark" heroName="Superman" /> */}
-     
+
       {/* <Counter /> */}
       {/* <Ace />
-      
+
       <Hello /> */}
 
     {/* <ClickFun />
