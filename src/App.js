@@ -10,7 +10,7 @@ import Counter from "./components/counter";
 import ClickFun from "./components/eventClick";
 import ClickClass from "./components/classClick";
 import Eventbind from "./components/eventBind";
-import Parent from "./components/parentComp";
+import Parent from "./components/parentComp.jsx";
 import Condition from "./components/userGreeting";
 import List from "./components/nameList";
 import Stylesheet from "./components/styleSheet";
@@ -23,6 +23,10 @@ import Fragment from "./components/fragmentDemo";
 import Table from "./components/table";
 import Purecomp from './components/pureComp';
 import Parentcomp from './components/Parentcomp';
+import Ref from "./components/refDemo";
+import ParentRef from "./components/parenRef";
+import ParentFr from './components/FRparent';
+import PortalDemo from './components/portal_demo';
 
 
 function App() {
@@ -34,7 +38,12 @@ function App() {
       {/*<Fragment />*/}
       {/*<Table />*/}
       {/*<Purecomp />*/}
-      <Parentcomp />
+      {/*<Parentcomp />*/}
+      {/*<Ref />*/}
+      {/*<ParentRef />*/}
+      {/*<ParentFr />*/}
+      <PortalDemo />
+
 
         {/*<Condition /> */}
       {/*<List />*/}
