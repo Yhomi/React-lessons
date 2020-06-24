@@ -19,7 +19,10 @@ import './appStyles.css';
 import styles from './appStyles.module.css';
 import Form from "./components/form";
 import CycleA from "./components/lifeCycleA";
-
+import Fragment from "./components/fragmentDemo";
+import Table from "./components/table";
+import Purecomp from './components/pureComp';
+import Parentcomp from './components/Parentcomp';
 
 
 function App() {
@@ -27,7 +30,11 @@ function App() {
     <div className="App">
 
       {/*}<Form />*/}
-      <CycleA />
+      {/*<CycleA />*/}
+      {/*<Fragment />*/}
+      {/*<Table />*/}
+      {/*<Purecomp />*/}
+      <Parentcomp />
 
         {/*<Condition /> */}
       {/*<List />*/}
