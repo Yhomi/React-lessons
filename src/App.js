@@ -27,11 +27,32 @@ import Ref from "./components/refDemo";
 import ParentRef from "./components/parenRef";
 import ParentFr from './components/FRparent';
 import PortalDemo from './components/portal_demo';
+import Hero from "./components/hero";
+import ErrorBoundary from './components/errorBoundary';
+import ClickCounter from "./components/clickCounter";
+import HoverCounter from "./components/hoverCounter";
+import ClickTwo from "./components/clickTwo";
+import HoverTwo from "./components/hoverTwo";
+import User from "./components/user";
+import CounterComp from "./components/counterComponent";
+import CompC from "./components/compC";
+import {UserProvider} from "./components/userContext";
 
 
 function App() {
   return (
     <div className="App">
+
+      {/*<CounterComp render={(count,incrementCount)=><ClickTwo count={count} incrementCount={incrementCount} />} />
+      <CounterComp render={(count,incrementCount)=><HoverTwo count={count} incrementCount={incrementCount} />} />*/}
+
+      {/* Passing as children */}
+      {/*<CounterComp>{(count,incrementCount)=><ClickTwo count={count} incrementCount={incrementCount} />}</CounterComp>
+      <CounterComp>{(count,incrementCount)=><HoverTwo count={count} incrementCount={incrementCount} />}</CounterComp>*/}
+      {/*<CompC />*/}
+      <UserProvider value="John Doe">
+          <CompC />
+      </UserProvider>
 
       {/*}<Form />*/}
       {/*<CycleA />*/}
@@ -42,8 +63,23 @@ function App() {
       {/*<Ref />*/}
       {/*<ParentRef />*/}
       {/*<ParentFr />*/}
-      <PortalDemo />
+      {/*<PortalDemo />*/}
+      {/*<ErrorBoundary>
+          <Hero heroName="Batman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+          <Hero heroName="Superman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+          <Hero heroName="joker" />
+      </ErrorBoundary>*/}
 
+      {/*<ClickCounter name="Yhomi" />
+      <HoverCounter name="John Doe" />*/}
+
+      {/*<ClickTwo />
+      <HoverTwo />
+      <User render={(isLoggedIn)=>isLoggedIn ? 'John Doe':"Guest"} /> */}
 
         {/*<Condition /> */}
       {/*<List />*/}
